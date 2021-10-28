@@ -1,0 +1,17 @@
+import React from "react"
+
+type ContainerProps = {
+    styles: React.CSSProperties
+    names?: {
+        first: string
+        last: string
+    }[]
+}
+
+export const Container = (props: ContainerProps) => {
+    return (
+        <div style={props.styles}>
+            Text goes here
+        </div>
+    )
+}
